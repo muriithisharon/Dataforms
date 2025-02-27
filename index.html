@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        #heading{
+            text-align: left;
+        }
+        .signup_form{
+            border: solid 1px;
+            width: 28%;
+            margin: 50px auto;
+            padding: 10px;
+            text-align: center;
+            height:  0 auto;
+            margin-top: 5%;
+        }
+
+        #email{
+            padding: 15px 15px;
+            width: 95%;
+            border-radius: 5px;
+            border: solid 1px;
+            margin: 10px 0;
+
+        }
+        #name{
+            padding: 15px 15px;
+            width: 95%;
+            border-radius: 5px;
+            border: solid 1px;
+            margin: 10px 0;
+        }
+        #password{
+            padding: 15px 15px;
+            width: 95%;
+            border-radius: 5px;
+            border: solid 1px;
+            margin: 10px 0;
+        }
+        .signup_form button{
+            padding: 16px 15px;
+            margin: 5px 0;
+            width: 98%;
+            text-align: center;
+            background: none;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .signup_form label{
+            float: left;
+        }
+        p{
+            text-align: left;
+        }
+        form{
+            height: 650px;
+        }
+        a {
+  color: black;
+  text-decoration: none;
+        }
+        .lines{
+        position: relative;
+            max-width: 500px;
+            margin: 30px auto;
+            text-align: center;
+            font-size: 15px;
+      }
+      .lines:before{
+        content: " ";
+            display: block;
+            height: 0.5px;
+            width: 130px;
+            position: absolute;
+            top: 50%;
+            background: black
+      }
+      .lines:after{
+        content: " ";
+            height: 0.5px;
+            width: 30%;
+            background: black;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+      }
+
+    </style>
+</head>
+<body>
+
+    <form  class="signup_form" action="login.html"> 
+        <p>Already have an account?<a href="login.html"><b>Sign In</b></a></p>
+        <h1 id="heading">Sign Up</h1>
+        <label for="name">Name</label>
+        <br>
+        <input id="name" placeholder="Enter Name" type="text"/>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input id="email" placeholder="Enter email address" type="email">
+         <br>
+        <label for="password">Password</label>
+        <br>
+        <input id="password" placeholder="Enter Password" type="password">
+        <br>
+        <label for="terms">I have Read and Agree with <b>Terms Of Service</b> and <b>Our Privacy Policy</b></label>
+        <br>
+        <input id="terms" type="checkbox" type="">
+        <br>
+        <button type="submit">Sign Up</button>
+        <br>
+        <h2 class="lines">Or Sign Up with</h2>
+        <i class="fa-brands fa-google" style="color: #09090a;"></i>
+        <i class="fa-brands fa-facebook" style="color: #000000;"></i>
+        
+    </form>
+    
+</body>
+</html>

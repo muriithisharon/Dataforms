@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
         #heading{
-            text-align: center;
+            text-align: left;
         }
         .signin_form{
             border: solid 1px;
-            width: 40%;
-            margin: 0 auto;
+            width: 28%;
+            margin: 50px auto;
             padding: 10px;
             text-align: center;
             height:  0 auto;
+            margin-top: 3%;
+            box-shadow: 0 4px 8px rgba(0 ,0 ,0 ,0.1);
+        
         }
 
-        .signin_form input{
+        #email{
             padding: 15px 15px;
             width: 95%;
             border-radius: 5px;
@@ -25,10 +29,18 @@
             margin: 10px 0;
 
         }
+        #password{
+            padding: 15px 15px;
+            width: 95%;
+            border-radius: 5px;
+            border: solid 1px;
+            margin: 10px 0;
+  
+        }
         .signin_form button{
             padding: 16px 15px;
             margin: 5px 0;
-            width: 50%;
+            width: 95%;
             text-align: center;
             background: none;
             border: none;
@@ -36,22 +48,62 @@
             color: white;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
         .signin_form label{
             float: left;
+            
+            
         }
-        
+        p{
+            text-align: left;
+        }
+        form{
+            height: 650px;
+        }
+a {
+  color: black;
+  text-decoration: none;
+
+}
+.lines{
+        position: relative;
+            max-width: 500px;
+            margin: 30px auto;
+            text-align: center;
+            font-size: 15px;
+      }
+      .lines:before{
+        content: " ";
+            display: block;
+            height: 0.5px;
+            width: 130px;
+            position: absolute;
+            top: 50%;
+            background: black
+      }
+      .lines:after{
+        content: " ";
+            height: 0.5px;
+            width: 30%;
+            background: black;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+      }
+
+
+
+
     </style>
 </head>
 <body>
 
-    <form  class="signin_form"> 
-        <p>Already have an account? <a href=""></a></p>
-        <h1 id="heading">Sign Up</h1>
-        <label for="name">Name</label>
-        <br>
-        <input id="name" placeholder="Enter Name" type="text"/>
-        <br>
+    <form  class="signin_form" action="table.html"> 
+        <p>Don't have an account?<a href="index.html"><b>Sign Up</b></a></p>
+        <h1 id="heading">Sign In</h1>
         <label for="email">Email</label>
         <br>
         <input id="email" placeholder="Enter email address" type="email">
@@ -60,8 +112,16 @@
         <br>
         <input id="password" placeholder="Enter Password" type="password">
         <br>
-        <button type="">Sign Up</button>
-        
+        <input id="terms" type="checkbox" required">
+        <label for="terms">I have Read and Agree with <b>Terms Of Service</b> and Our Privacy Policy</label>
+        <br>
+         <button type="">Sign In</button>
+         <br>
+         <h2 class="lines">Or Sign In with</h2>
+         <br>
+         <div class="icon"></div>
+         <i class="fa-brands fa-google" style="color: #09090a;"></i>
+         <i class="fa-brands fa-facebook" style="color: #000000;"></i>
     </form>
     
 </body>
